@@ -90,8 +90,11 @@ using UnityEngine.SceneManagement;
             
                 rectTransform.sizeDelta = buttonSize;
 
-                Image buttonImage = btn.GetComponent<Image>();
+                // Find the child object with the Image component
+                Transform childWithImage = btn.transform.Find("Image"); // Replace with the actual name of the child object
+                Image buttonImage = childWithImage != null ? childWithImage.GetComponent<Image>() : null;
                 Text buttonText = btn.GetComponentInChildren<Text>();
+
                 if (buttonImage != null)
                 {
                     buttonImage.sprite = levels[i].isUnlocked ? unlockedSprite : lockedSprite;
@@ -126,8 +129,9 @@ using UnityEngine.SceneManagement;
                     if (savedSceneList.Contains(levelData.sceneName))
                     {
                         levelData.isUnlocked = true;
-                        // Update button appearance
-                        Image buttonImage = levelData.levelButton.GetComponentInChildren<Image>();
+                    // Update button appearance
+                        Transform childWithImage = levelData.levelButton.transform.Find("Image"); // Replace with the actual name of the child object
+                        Image buttonImage = childWithImage != null ? childWithImage.GetComponent<Image>() : null;
                         Text buttonText = levelData.levelButton.GetComponentInChildren<Text>();
                         if (buttonImage != null)
                         {
@@ -243,31 +247,31 @@ using UnityEngine.SceneManagement;
             }
         }
 
-        public void UnlockNextLevel(int currentLevelIndex)
+    public void UnlockNextLevel(int currentLevelIndex)
+    {
+        if (currentLevelIndex + 1 < levels.Count)
         {
-            if (currentLevelIndex + 1 < levels.Count)
-            {
-                int nextLevelIndex = currentLevelIndex + 1;
-                levels[nextLevelIndex].isUnlocked = true;
+            int nextLevelIndex = currentLevelIndex + 1;
+            levels[nextLevelIndex].isUnlocked = true;
 
-                Button nextButton = levels[nextLevelIndex].levelButton;
-                if (nextButton != null)
+            Button nextButton = levels[nextLevelIndex].levelButton;
+            if (nextButton != null)
+            {
+                Image buttonImage = nextButton.GetComponentInChildren<Image>();
+                if (buttonImage != null)
                 {
-                    Image buttonImage = nextButton.GetComponent<Image>();
-                    if (buttonImage != null)
-                    {
-                        buttonImage.sprite = unlockedSprite;
-                    }
-                    Text buttonText = nextButton.GetComponentInChildren<Text>();
-                    if (buttonText != null)
-                    {
-                        buttonText.color = unlockedTextColor;
-                    }
-                    nextButton.interactable = true;
+                    buttonImage.sprite = unlockedSprite;
                 }
-                PlayerPrefs.SetInt($"Level_{nextLevelIndex}_Unlocked", 1);
-                PlayerPrefs.Save();
+                Text buttonText = nextButton.GetComponentInChildren<Text>();
+                if (buttonText != null)
+                {
+                    buttonText.color = unlockedTextColor;
+                }
+                nextButton.interactable = true;
             }
+            PlayerPrefs.SetInt($"Level_{nextLevelIndex}_Unlocked", 1);
+            PlayerPrefs.Save();
         }
     }
+}
 

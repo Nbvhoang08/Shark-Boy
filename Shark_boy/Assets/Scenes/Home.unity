@@ -972,7 +972,7 @@ MonoBehaviour:
     isUnlocked: 0
   buttonContainer: {fileID: 749948905}
   levelButtonPrefab: {fileID: 3029666593218600357, guid: b6586449bb3c64f7d92d91ecf7c47fa6, type: 3}
-  unlockedSprite: {fileID: 21300000, guid: ae63eac2b108a436bb5c27f7402df5e0, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 1bbec26f08b51e943bf494fdfad5df40, type: 3}
   lockedSprite: {fileID: 21300000, guid: 5b733e4c6e44e4a63b108b21846d0e9f, type: 3}
   unlockedTextColor: {r: 1, g: 0, b: 0, a: 1}
   lockedTextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -1213,8 +1213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -105}
-  m_SizeDelta: {x: 1200, y: 690}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 1400, y: 690}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &749948906
 MonoBehaviour:
@@ -1236,8 +1236,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 160, y: 160}
-  m_Spacing: {x: 0, y: 0}
+  m_CellSize: {x: 200, y: 200}
+  m_Spacing: {x: 60, y: 60}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &770299001
@@ -1259,7 +1259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &770299002
 RectTransform:
   m_ObjectHideFlags: 0
