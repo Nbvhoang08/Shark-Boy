@@ -19,10 +19,7 @@ public class Port : MonoBehaviour
     private GameObject playerInPortal;
     private Rigidbody2D playerRb;
 
-    void Start()
-    {
-        Debug.Log(transform.rotation.z);
-    }
+   
     private void Update()
     {
         if (!isRotating)
@@ -97,7 +94,7 @@ public class Port : MonoBehaviour
             Mathf.Cos(angleInRadians),
             Mathf.Sin(angleInRadians)
         );
-
+        SoundManager.Instance.PlayVFXSound(0);
         playerRb.velocity = launchDirection * launchForce;
      
     }

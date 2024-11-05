@@ -5,14 +5,10 @@ using UnityEngine;
 public class GamePlayCanvas : UICanvas
 {
     // Start is called before the first frame update
-    void Start()
+    public void PauseBtn()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Time.timeScale = 0;
+        UIManager.Instance.OpenUI<PauseCanvas>();
+        SoundManager.Instance.PlayVFXSound(2);
     }
 }

@@ -44,7 +44,7 @@ using UnityEngine.SceneManagement;
         private void OnEnable()
         {
             InitializeLevelButtons();
-            Debug.Log("LevelCanvas");
+      
             // Ẩn loading screen nếu có
             if (loadingScreen != null)
             {
@@ -64,7 +64,7 @@ using UnityEngine.SceneManagement;
         {
             UIManager.Instance.CloseAll();
             UIManager.Instance.OpenUI<HomeCanvas>();
-        
+            SoundManager.Instance.PlayVFXSound(2);
         }
 
 
@@ -77,7 +77,7 @@ using UnityEngine.SceneManagement;
                 Destroy(child.gameObject);
             }
 
-            Debug.Log("Canvas Setup");
+           
 
             for (int i = 0; i < levels.Count; i++)
             {
@@ -122,6 +122,7 @@ using UnityEngine.SceneManagement;
         {
             if (!levelData.isUnlocked)
             {
+          
                 string savedScenes = PlayerPrefs.GetString("SavedScenes", string.Empty);
                 if (!string.IsNullOrEmpty(savedScenes))
                 {
@@ -151,15 +152,7 @@ using UnityEngine.SceneManagement;
             }
         }
 
-        private IEnumerator CheckListenerAdded(Button btn, string levelName)
-        {
-            yield return null; // Đợi một khung hình
-
-            if (btn.onClick.GetPersistentEventCount() == 0)
-            {
-                Debug.LogWarning($"Chưa thêm listener cho nút của cấp độ {levelName}");
-            }
-        }
+        
 
 
 
@@ -196,7 +189,8 @@ using UnityEngine.SceneManagement;
         {
             if (levelIndex >= 0 && levelIndex < levels.Count && levels[levelIndex].isUnlocked)
             {
-                //SoundManager.Instance.PlayPopUpSound();
+                
+                SoundManager.Instance.PlayVFXSound(2);
                 StartCoroutine(LoadLevelSequence(levelIndex));
             }
         }

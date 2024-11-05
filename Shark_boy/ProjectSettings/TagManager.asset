@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Port
   - Ground
+  - Spike
+  - Coin
+  - Gate
   layers:
   - Default
   - TransparentFX
