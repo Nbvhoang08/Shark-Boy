@@ -15,6 +15,7 @@ public class WinCanvas : UICanvas
     {
   
         UpdateButtonImage();
+        
   
     }
     public void NextBtn()

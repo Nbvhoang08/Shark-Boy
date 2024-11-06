@@ -122,7 +122,7 @@ public class Port : MonoBehaviour
         // Vẽ hướng của portal
         Gizmos.color = Color.red;
         Vector3 direction = Quaternion.Euler(0, 0, currentAngle) * Vector3.right;
-        Gizmos.DrawRay(transform.position, direction * 2f);
+        Gizmos.DrawRay(transform.position, direction * 10f);
         
         // Vẽ vùng trigger
         Gizmos.color = Color.yellow;

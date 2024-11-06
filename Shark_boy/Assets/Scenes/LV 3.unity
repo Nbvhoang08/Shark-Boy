@@ -1088,6 +1088,10 @@ PrefabInstance:
       propertyPath: currentAngle
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
+      propertyPath: rotationInterval
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8760918159739417650, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.66
@@ -1318,7 +1322,7 @@ Camera:
   far clip plane: 1000
   field of view: 72.71517
   orthographic: 1
-  orthographic size: 8.415
+  orthographic size: 6.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1686,6 +1690,10 @@ PrefabInstance:
     - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: rotationAngle
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
+      propertyPath: rotationInterval
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8760918159739417650, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5152,6 +5160,10 @@ PrefabInstance:
       propertyPath: rotationAngle
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
+      propertyPath: rotationInterval
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8760918159739417650, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.18
@@ -5558,6 +5570,10 @@ PrefabInstance:
     - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: rotationAngle
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
+      propertyPath: rotationInterval
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8760918159739417650, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6821,6 +6837,10 @@ PrefabInstance:
       propertyPath: rotationAngle
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
+      propertyPath: rotationInterval
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8760918159739417650, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.78
@@ -6937,11 +6957,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1442806053455508563, guid: f80be5c1841b5467584b721a7e230174, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.407
+      value: 20.15
       objectReference: {fileID: 0}
     - target: {fileID: 1442806053455508563, guid: f80be5c1841b5467584b721a7e230174, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.65
+      value: -5.62
       objectReference: {fileID: 0}
     - target: {fileID: 1442806053455508563, guid: f80be5c1841b5467584b721a7e230174, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7411,6 +7431,10 @@ PrefabInstance:
       propertyPath: rotationAngle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7004104700105671917, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
+      propertyPath: rotationInterval
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8760918159739417650, guid: 5780b92c96bc54f92b39f63aa9f4d057, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.65
@@ -7461,7 +7485,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 7513938423916838801}
   - {fileID: 555903701564836379}
   - {fileID: 1841652965}
   - {fileID: 1906811650}
@@ -7471,6 +7494,7 @@ SceneRoots:
   - {fileID: 1307455252}
   - {fileID: 113159531}
   - {fileID: 1844725613}
+  - {fileID: 7513938423916838801}
   - {fileID: 688769694}
   - {fileID: 1995757957}
   - {fileID: 1373722973}

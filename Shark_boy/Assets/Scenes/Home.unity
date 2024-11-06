@@ -1012,7 +1012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &577726745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1106,7 +1106,79 @@ MonoBehaviour:
   - levelName: 02
     sceneName: LV 2
     levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 03
+    sceneName: LV 3
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 04
+    sceneName: LV 4
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 05
+    sceneName: LV 5
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 06
+    sceneName: LV 6
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 07
+    sceneName: LV 7
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 08
+    sceneName: LV 8
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 09
+    sceneName: LV 9
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 10
+    sceneName: LV 10
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 11
+    sceneName: LV 11
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 12
+    sceneName: LV 12
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 13
+    sceneName: LV 13
+    levelButton: {fileID: 0}
     isUnlocked: 0
+  - levelName: 14
+    sceneName: LV 14
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 15
+    sceneName: LV 15
+    levelButton: {fileID: 0}
+    isUnlocked: 0
+  - levelName: 16
+    sceneName: LV 16
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 17
+    sceneName: LV 17
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 18
+    sceneName: LV 18
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 19
+    sceneName: LV 19
+    levelButton: {fileID: 0}
+    isUnlocked: 1
+  - levelName: 20
+    sceneName: LV 20
+    levelButton: {fileID: 0}
+    isUnlocked: 1
   buttonContainer: {fileID: 749948905}
   levelButtonPrefab: {fileID: 3029666593218600357, guid: b6586449bb3c64f7d92d91ecf7c47fa6, type: 3}
   unlockedSprite: {fileID: 21300000, guid: 1bbec26f08b51e943bf494fdfad5df40, type: 3}
@@ -1402,8 +1474,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 200, y: 200}
-  m_Spacing: {x: 60, y: 60}
+  m_CellSize: {x: 160, y: 160}
+  m_Spacing: {x: 40, y: 40}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!1 &770299001
@@ -1425,7 +1497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &770299002
 RectTransform:
   m_ObjectHideFlags: 0
